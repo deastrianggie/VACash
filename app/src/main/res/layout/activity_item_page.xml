@@ -39,7 +39,7 @@
             android:text="MOBILE"
             android:textAlignment="center"
             android:textColor="#FDFDFD"
-            android:textSize="17dp" />
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="25dp"
@@ -53,41 +53,52 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.19999999">
+        app:layout_constraintVertical_bias="0.09">
 
-        <TextView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:fontFamily="@font/font_awesome_solid"
-            android:text="\uf060"
-            android:textColor="#FDFDFD"
-            android:textSize="23sp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            app:srcCompat="@drawable/mlbblogo"
+            android:layout_marginLeft="20dp"/>
 
-        <TextView
-            android:layout_width="320dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fontFamily="@font/poppins_bold"
-            android:text="MOBILE"
-            android:textAlignment="center"
-            android:textColor="#FDFDFD"
-            android:textSize="17dp" />
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.09">
 
-        <TextView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:fontFamily="@font/font_awesome_solid"
-            android:text="\uf0c9"
-            android:textColor="#FDFDFD"
-            android:textSize="23sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Mobile Legends"
+                android:textColor="#FDFDFD"
+                android:textSize="21sp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Adventure"
+                android:textColor="#FDFDFD"
+                android:textSize="12sp" />
+
+        </LinearLayout>
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
