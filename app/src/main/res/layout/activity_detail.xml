@@ -8,7 +8,7 @@
     android:background="@drawable/gradient"
     >
 
-
+<!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="25dp"
@@ -43,6 +43,7 @@
 
     </LinearLayout>
 
+<!--  Item's Image  -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -53,9 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/mobile_legend"
+        app:srcCompat="@drawable/detail_image"
     />
 
+
+<!--  Diamonds Remainder Info -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="25dp"
@@ -76,13 +79,251 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="10dp"
-            android:layout_marginTop="5dp"
-            android:text="777 diamonds left"
-            android:fontFamily="@font/poppins_bold"
-            android:textSize="6sp"
+            android:layout_marginTop="10dp"
+            android:text="7777 diamonds left"
+            android:fontFamily="@font/poppins_reguler"
+            android:textSize="8sp"
+            android:textColor="#8B8D8C"
+            android:textAlignment="textEnd"
             />
 
     </RelativeLayout>
+
+<!-- Item Description   -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@drawable/description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Item's Description"
+            android:textSize="11dp"
+            android:textColor="#0D5D63"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_reguler"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. "
+            android:textSize="8dp"
+            android:textColor="#43A19F"
+            android:textAlignment="textStart"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="77dp"
+            android:background="#8B8D8C"/>
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/font_awesome_solid"
+            android:text="\ue1f3"
+            android:textColor="#0D5D63"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginLeft="35dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="9sp"
+            android:textColor="#0D5D63"
+            android:text="Rp10.000,00"
+            />
+
+    </RelativeLayout>
+
+<!-- Purchase Form  -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="440dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.436">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Purchase"
+        android:textColor="#FDFDFD"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#FDFDFD"
+        android:textSize="6sp"
+        android:text="Email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/input_text"
+        android:hint="Enter email address"
+        android:paddingHorizontal="5dp"
+        android:fontFamily="@font/poppins_reguler"
+        android:textSize="6sp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:layout_marginTop="65dp"
+        android:textColor="#FDFDFD"
+        android:textSize="6sp"
+        android:text="Username"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/input_text"
+        android:paddingHorizontal="5dp"
+        android:hint="Enter username"
+        android:fontFamily="@font/poppins_reguler"
+        android:textSize="6sp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="105dp"
+        android:text="Quantity"
+        android:fontFamily="@font/poppins_reguler"
+        android:textSize="9sp"
+        android:textColor="#FDFDFD"
+        />
+    <TextView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="300dp"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf146"
+        android:textColor="#FDFDFD"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="327dp"
+        android:text="0"
+        android:fontFamily="@font/poppins_reguler"
+        android:textSize="9sp"
+        android:textColor="#FDFDFD"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="18dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="360dp"
+        android:fontFamily="@font/font_awesome"
+        android:text="\uf0fe"
+        android:textColor="#FDFDFD"
+        android:textAlignment="center"
+        />
+<!-- Purchase for -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="130dp"
+
+        >
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="13dp"
+            android:text="Purchase cash for"
+            android:fontFamily="@font/poppins_reguler"
+            android:textSize="9sp"
+            android:textColor="#FDFDFD"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:text="Mobile Legends"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="11sp"
+            android:textColor="#FDFDFD"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_marginTop="160dp">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_reguler"
+            android:textSize="9dp"
+            android:text="Total Payment"
+            android:textColor="#FDFDFD"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="10dp"
+            android:text="Rp0,00"
+            android:textColor="#FDFDFD"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:backgroundTint="#040605"
+            android:text="BUY"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="13dp"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
 
 
 
