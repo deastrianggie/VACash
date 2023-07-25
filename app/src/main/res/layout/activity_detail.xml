@@ -72,22 +72,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.436">
 
-        <TextView
-            android:id="@+id/itemBase"
+        <ProgressBar
+            android:id="@+id/remainder"
             android:layout_width="match_parent"
             android:layout_height="7dp"
             android:background="@drawable/diamonds_remainder"
-            />
+            android:progressDrawable="@drawable/diamonds"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/itemBase"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="7dp"-->
+<!--            android:background="@drawable/diamonds_remainder"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/remainderItems"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="7dp"-->
+<!--            android:background="@drawable/diamonds"-->
+<!--            />-->
 
         <TextView
-            android:id="@+id/remainderItems"
-            android:layout_width="300dp"
-            android:layout_height="7dp"
-            android:background="@drawable/diamonds"
-            />
-
-        <TextView
-            android:id="@+id/itemRemain"
+            android:id="@+id/remainderDesc"
             android:layout_width="match_parent"
             android:layout_height="10dp"
             android:layout_marginTop="10dp"
@@ -99,6 +107,8 @@
             />
 
     </RelativeLayout>
+
+
 
 <!-- Item Description   -->
     <RelativeLayout

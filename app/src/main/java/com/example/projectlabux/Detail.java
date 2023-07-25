@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 
 public class Detail extends AppCompatActivity {
 
     private Button button;
     EditText email, username;
+    private int currentRemainder = 0;
+    private ProgressBar remainder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,9 @@ public class Detail extends AppCompatActivity {
         button = findViewById(R.id.buyBtn);
         email = findViewById(R.id.email);
         username = findViewById(R.id.username);
+        remainder = findViewById(R.id.remainder);
+        remainder.setMax(10000);
+        remainder.setProgress(7777);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
