@@ -250,6 +250,7 @@
         android:textColor="#FDFDFD"
         />
     <TextView
+        android:id="@+id/decrement"
         android:layout_width="17dp"
         android:layout_height="17dp"
         android:layout_marginTop="105dp"
@@ -272,6 +273,7 @@
         android:textAlignment="center"
         />
     <TextView
+        android:id="@+id/increment"
         android:layout_width="18dp"
         android:layout_height="17dp"
         android:layout_marginTop="105dp"
